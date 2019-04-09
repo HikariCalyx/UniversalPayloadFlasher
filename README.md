@@ -31,7 +31,7 @@ If you have precompiled payload_dumper.exe, you can use it instead, without Pyth
 
 This is a bit difficult to find, so I'll provide in the release section directly.
 
-## How to use, if you decided to use the source code only
+## How to use, if you decided to use the source script only
 1. Install Python 3 with Environment Variable added.
 
 2. Put the script with following files (If you decided to use payload_dumper.exe, then you needn't to put payload_dumper.py and update_metadata_pb2.py altogether):

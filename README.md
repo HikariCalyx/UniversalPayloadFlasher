@@ -3,25 +3,35 @@ A script that will allow you flash payload.bin for A/B Android devices like fast
 
 ## What you need
 1. Google Platform Tools
+
 Which can be downloaded from
+
 https://developer.android.com/studio/releases/platform-tools
 
+
 Or this website for Chinese users
+
 https://developer.android.google.cn/studio/releases/platform-tools
 
 2. Python 3
+
 You must add Python 3 into your environment variable when installing.
+
 https://www.python.org/downloads/
 
 3. Payload dumper
+
 If you want to use Payload dumper python script, this can be downloaded from
+
 https://gist.github.com/ius/42bd02a5df2226633a342ab7a9c60f15
+
 If you have precompiled payload_dumper.exe, you can use it instead, without Python 3 installed. 
 
 ## How to use, if you decided to use the source code only
 1. Install Python 3 with Environment Variable added.
 
 2. Put the script with following files:
+
 payload_dumper.py
 update_metadata_pb2.py
 fastboot.exe

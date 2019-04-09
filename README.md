@@ -27,6 +27,10 @@ https://gist.github.com/ius/42bd02a5df2226633a342ab7a9c60f15
 
 If you have precompiled payload_dumper.exe, you can use it instead, without Python 3 installed. 
 
+4. img2simg for Windows
+
+This is a bit difficult to find, so I'll provide in the release section directly.
+
 ## How to use, if you decided to use the source code only
 1. Install Python 3 with Environment Variable added.
 
@@ -48,6 +52,13 @@ mke2fs.conf
 
 make_f2fs.exe
 
+cyggcc_s-1.dll
+
+cygwin1.dll
+
+cygz.dll
+
+img2simg.exe
 
 3. Place payload.bin altogether, which can be extracted from your Full OTA package. The payload.bin from Append OTA will not be accepted.
 

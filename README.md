@@ -33,13 +33,21 @@ If you have precompiled payload_dumper.exe, you can use it instead, without Pyth
 2. Put the script with following files:
 
 payload_dumper.py
+
 update_metadata_pb2.py
+
 fastboot.exe
+
 AdbWinApi.dll
+
 AdbWinUsbApi.dll
+
 mke2fs.exe
+
 mke2fs.conf
+
 make_f2fs.exe
+
 
 3. Place payload.bin altogether, which can be extracted from your Full OTA package. The payload.bin from Append OTA will not be accepted.
 

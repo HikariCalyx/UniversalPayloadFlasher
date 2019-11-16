@@ -31,6 +31,14 @@ If you have precompiled payload_dumper.exe, you can use it instead, without Pyth
 
 This is a bit difficult to find, so I'll provide in the release section directly.
 
+5. dd for Windows
+
+Thanks to John Newbigin for such tool!
+
+http://www.chrysocome.net/dd
+
+Search "dd-0.6beta3.zip" in page above to download it.
+
 ## How to use, if you decided to use the source script only
 1. Install Python 3 with Environment Variable added.
 
@@ -59,6 +67,8 @@ cygwin1.dll
 cygz.dll
 
 img2simg.exe
+
+dd.exe
 
 3. Place payload.bin altogether, which can be extracted from your Full OTA package. The payload.bin from Append OTA will not be accepted.
 

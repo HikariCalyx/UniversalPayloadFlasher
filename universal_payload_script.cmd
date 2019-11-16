@@ -91,6 +91,16 @@ echo.
 dir /b *.img > list.txt
 for /f "delims=." %%i in (list.txt) do set "%%i=%%i.img"&echo fastboot flash %%i_%wslot% %%i.img>>flashit.cmd
 del list.txt
+if exist preloader.img (
+echo MediaTek AB device detected.
+set /p preloadercontent=<preloader.img
+if "%preloadercontent:~0,9%"=="EMMC_BOOT" (
+echo Processing preloader to prevent brick...
+ren preloader.img preloader.oldimg
+dd if=preloader.oldimg of=preloader.img bs=1 skip=2048
+)
+)
+:skip_prcspreloader
 if not exist vendor.img.ext4 ren system.img system.img.ext4
 if not exist vendor.img.ext4 ren vendor.img vendor.img.ext4
 if not exist system.img echo Converting system image to sparse, please wait...
